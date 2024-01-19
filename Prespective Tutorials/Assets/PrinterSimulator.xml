@@ -1,0 +1,415 @@
+<ControllerSpecification>
+  <ActiveController>
+    <ADS>
+      <Name>PrinterServer</Name>
+      <AmsNetId>xxx.xxx.xxx.xxx.xxx.xxx:xxx</AmsNetId>
+      <Port>0</Port>
+    </ADS>
+    <Inputs>
+      <!--INPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>X Motor_iVelocity</Name>
+        <Address>GVLs.DrivenStepperMotor[0].iVelocity</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Velocity (deg/s)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>X Motor_iPositionDeg</Name>
+        <Address>GVLs.DrivenStepperMotor[0].iPositionDeg</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Position (deg)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>X Motor_iPositionStep</Name>
+        <Address>GVLs.DrivenStepperMotor[0].iPositionStep</Address>
+        <Type>INT32</Type>
+        <Description>DEF: Position (step)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>X Motor_iError</Name>
+        <Address>GVLs.DrivenStepperMotor[0].iError</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Error State</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Y Motor_iVelocity</Name>
+        <Address>GVLs.DrivenStepperMotor[1].iVelocity</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Velocity (deg/s)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Y Motor_iPositionDeg</Name>
+        <Address>GVLs.DrivenStepperMotor[1].iPositionDeg</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Position (deg)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Y Motor_iPositionStep</Name>
+        <Address>GVLs.DrivenStepperMotor[1].iPositionStep</Address>
+        <Type>INT32</Type>
+        <Description>DEF: Position (step)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Y Motor_iError</Name>
+        <Address>GVLs.DrivenStepperMotor[1].iError</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Error State</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Z Motor_iVelocity</Name>
+        <Address>GVLs.DrivenStepperMotor[2].iVelocity</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Velocity (deg/s)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Z Motor_iPositionDeg</Name>
+        <Address>GVLs.DrivenStepperMotor[2].iPositionDeg</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Position (deg)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Z Motor_iPositionStep</Name>
+        <Address>GVLs.DrivenStepperMotor[2].iPositionStep</Address>
+        <Type>INT32</Type>
+        <Description>DEF: Position (step)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+      <!--INPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Input>
+        <Name>Z Motor_iError</Name>
+        <Address>GVLs.DrivenStepperMotor[2].iError</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Error State</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Input>
+    </Inputs>
+    <Outputs>
+      <!--OUTPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>X Motor_oPreferredVelocity</Name>
+        <Address>GVLs.DrivenStepperMotor[0].oPreferredVelocity</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Preferred Velocity (deg/s)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>X Motor_oTargetStep</Name>
+        <Address>GVLs.DrivenStepperMotor[0].oTargetStep</Address>
+        <Type>INT32</Type>
+        <Description>DEF: Target (step)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>X Motor_oContinuous</Name>
+        <Address>GVLs.DrivenStepperMotor[0].oContinuous</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Continuous Rotation</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>X Motor_oDirection</Name>
+        <Address>GVLs.DrivenStepperMotor[0].oDirection</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Continuous Direction (true = CW, false = CCW)</Description>
+        <Initvalue>True</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>X Motor_oIsActive</Name>
+        <Address>GVLs.DrivenStepperMotor[0].oIsActive</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Is Active</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'X Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>X Motor_oResetError</Name>
+        <Address>GVLs.DrivenStepperMotor[0].oResetError</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Reset Error</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Y Motor_oPreferredVelocity</Name>
+        <Address>GVLs.DrivenStepperMotor[1].oPreferredVelocity</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Preferred Velocity (deg/s)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Y Motor_oTargetStep</Name>
+        <Address>GVLs.DrivenStepperMotor[1].oTargetStep</Address>
+        <Type>INT32</Type>
+        <Description>DEF: Target (step)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Y Motor_oContinuous</Name>
+        <Address>GVLs.DrivenStepperMotor[1].oContinuous</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Continuous Rotation</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Y Motor_oDirection</Name>
+        <Address>GVLs.DrivenStepperMotor[1].oDirection</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Continuous Direction (true = CW, false = CCW)</Description>
+        <Initvalue>True</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Y Motor_oIsActive</Name>
+        <Address>GVLs.DrivenStepperMotor[1].oIsActive</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Is Active</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Y Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Y Motor_oResetError</Name>
+        <Address>GVLs.DrivenStepperMotor[1].oResetError</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Reset Error</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Z Motor_oPreferredVelocity</Name>
+        <Address>GVLs.DrivenStepperMotor[2].oPreferredVelocity</Address>
+        <Type>REAL32</Type>
+        <Description>DEF: Preferred Velocity (deg/s)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Z Motor_oTargetStep</Name>
+        <Address>GVLs.DrivenStepperMotor[2].oTargetStep</Address>
+        <Type>INT32</Type>
+        <Description>DEF: Target (step)</Description>
+        <Initvalue>0</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Z Motor_oContinuous</Name>
+        <Address>GVLs.DrivenStepperMotor[2].oContinuous</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Continuous Rotation</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Z Motor_oDirection</Name>
+        <Address>GVLs.DrivenStepperMotor[2].oDirection</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Continuous Direction (true = CW, false = CCW)</Description>
+        <Initvalue>True</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Z Motor_oIsActive</Name>
+        <Address>GVLs.DrivenStepperMotor[2].oIsActive</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Is Active</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+      <!--OUTPUTS 'Z Motor' of type: 'DrivenStepperMotorLogic-->
+      <Output>
+        <Name>Z Motor_oResetError</Name>
+        <Address>GVLs.DrivenStepperMotor[2].oResetError</Address>
+        <Type>BOOL</Type>
+        <Description>DEF: Reset Error</Description>
+        <Initvalue>False</Initvalue>
+        <Priority>0</Priority>
+        <Fidelity>-1</Fidelity>
+      </Output>
+    </Outputs>
+    <Variables />
+  </ActiveController>
+  <TypeDefinitions>
+    <Basetypes>
+      <BaseType>
+        <Name>STRING</Name>
+        <Bytes>81</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>BOOL</Name>
+        <Bytes>1</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>BYTE</Name>
+        <Bytes>1</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>SBYTE</Name>
+        <Bytes>1</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>WORD</Name>
+        <Bytes>2</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>DWORD</Name>
+        <Bytes>4</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>SHORT</Name>
+        <Bytes>2</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>USHORT</Name>
+        <Bytes>2</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>INT16</Name>
+        <Bytes>2</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>UINT16</Name>
+        <Bytes>2</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>INT32</Name>
+        <Bytes>4</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>UINT32</Name>
+        <Bytes>4</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>INT64</Name>
+        <Bytes>8</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>UINT64</Name>
+        <Bytes>8</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>REAL32</Name>
+        <Bytes>4</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+      <BaseType>
+        <Name>REAL64</Name>
+        <Bytes>8</Bytes>
+        <LeadBytes>0</LeadBytes>
+        <TrailBytes>0</TrailBytes>
+      </BaseType>
+    </Basetypes>
+    <Structs />
+  </TypeDefinitions>
+</ControllerSpecification>

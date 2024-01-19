@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="DCMOTOR" Id="{c2561d1b-bbf8-4961-aa7f-99b6bdba79db}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK DCMOTOR
+VAR_INPUT
+//<!-- PRESPECTIVE_AUTO_INJECT_INPUT_START -->
+iVelocity : REAL:= 0; //Current velocity in degrees/s
+//<!-- PRESPECTIVE_AUTO_INJECT_INPUT_END -->
+END_VAR
+VAR_OUTPUT
+//<!-- PRESPECTIVE_AUTO_INJECT_OUTPUT_START -->
+oPreferredVelocity : REAL:= 0; //Preferred Velocity in degrees/s
+//<!-- PRESPECTIVE_AUTO_INJECT_OUTPUT_END -->
+END_VAR
+VAR
+//<!-- PRESPECTIVE_AUTO_INJECT_VAR_START -->
+//<!-- PRESPECTIVE_AUTO_INJECT_VAR_END -->
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <LineIds Name="DCMOTOR">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVLS" Id="{ae3a6ac6-6ca0-4de5-8758-770b485df0cf}">
+    <Declaration><![CDATA[
+{attribute 'qualified_only'}
+VAR_GLOBAL
+//<!-- PRESPECTIVE_AUTO_INJECT_VAR_START -->
+DCMotor : ARRAY [0..0] OF DCMOTOR; //Automatically Exported Collection of POU's of type 'DCMotor'
+//<!-- PRESPECTIVE_AUTO_INJECT_VAR_END -->
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>
